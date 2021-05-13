@@ -1,0 +1,37 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: 10px;
+}
+
+input {
+    color: white;
+    background-color: seagreen;
+    padding: 20px 26px;
+    font-size: 32px;
+    box-shadow: -2px 2px #888;
+    display: block;
+    margin: 20px auto;
+}
+
+#farm_name {
+    color: whitesmoke;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+}
+
+.displayed {
+    background-image: url("../images/farm2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 100%;
+    padding: 10px;
+    background-position: center;
+}
