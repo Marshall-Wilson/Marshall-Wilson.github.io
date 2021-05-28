@@ -1,13 +1,65 @@
 <html>
+
 <head>
-    <link href = "./resources/css/index.css" rel="stylesheet">
-    <title>Marshall Wilson</title>
+    <link href="./resources/css/index.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Marshall Wilson | Software Engineer</title>
 </head>
+
 <body>
-    <header><h1>Marshall Wilson</h1></header>
-    <p>Welcome to my website!</p>
-    <h2> Try my <a href="./generator.html">phrase generator</a></h2>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1 id="logo">
+            Marshall Wilson
+        </h1>
+        <nav>
+            <a href="./index.html" class="nav-links current-link">work</a>
+            <a href="./about.html" class="nav-links">about</a>
+        </nav>
+    </header>
+    <div class="selector">
+        <button type="button" id="all"><h2>All</h2></button>
+        <button type="button" id="backend"><h2>Back-End</h2></button>
+        <button type="button" id="fullstack"><h2>Full-Stack</h2></button>
+        <button type="button" id="classwork"><h2>Classwork</h2></button>
+    </div>
+    <div class="projects">
+        <div class="project all-proj fullstack-proj" id="farm-names">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>Organic Farm Name Generator</h3>
+            </a>
+        </div>
+        <div class="project all-proj backend-proj" id="employee-scheduler">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>Museum Employee Scheduler</h3>
+            </a>
+        </div>
+        <div class="project all-proj classwork-proj" id="um">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>Universal Machine Emulator</h3>
+            </a>
+        </div>
+        <div class="project all-proj classwork-proj" id="pnm">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>PNM Image Manipulation</h3>
+            </a>
+        </div>
+        <div class="project all-proj classwork-proj" id="pnm">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>RPN Calculator</h3>
+            </a>
+        </div>
+        <div class="project all-proj classwork-proj" id="pnm">
+            <a href="./generator.html">
+                <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+                <h3>Musical Collaboration Explorer</h3>
+            </a>
+        </div>
+    </div>
 </body>
- 
+
 </html>
