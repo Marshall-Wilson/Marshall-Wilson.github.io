@@ -1,0 +1,32 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(200, 255, 255);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#colorInfo {
+    height: 10%;
+    margin: 20px;
+    background-color: seashell;
+}
+
+div h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+div h2 {
+    font-size: 1 rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+div h2 span {
+    font-weight: normal;
+}
