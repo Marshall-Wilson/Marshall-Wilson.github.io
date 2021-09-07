@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    height: 100%;
+    background-color: rgb(200, 255, 255);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#colorInfo {
+    margin: 40px;
+    padding: 5px;
+    width: 225px;
+    background-color: seashell;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#swatchColor {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 5px;
+}
+
+div h1 {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+div h2 {
+    width: 30%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+div h2 span {
+    font-weight: normal;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.75rem;
+    text-decoration: none;
+}

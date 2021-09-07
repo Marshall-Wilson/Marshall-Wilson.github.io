@@ -1,0 +1,111 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color: gray;
+}
+
+h1:hover {
+    color: black;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: gray;
+    width: 50px;
+}
+
+.current-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links:hover {
+    color: rgb(51, 51, 51);
+}
+
+.selector {
+    display: flex;
+    height: 100px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.selector button {
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector button:hover {
+    border: 1.5px solid black;
+    color: black;
+}
+
+.selector .selected {
+    border: 1.5px solid black;
+    color: black;
+}
+
+.projects {
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 28%;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.project a img {
+    width: calc(100% - 2px);
+    height: auto;
+    border: 1px solid gray;
+}
+
+.project a h3 {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
