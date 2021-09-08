@@ -1,8 +1,18 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+html {
+    height: 100%;
 }
 
-header {
+body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+#root {
+    height: 100%;
+}
+
+#Index header {
     display: flex;
     align-items: center;
     height: 100px;
@@ -10,17 +20,17 @@ header {
     justify-content: space-between;
 }
 
-h1 {
+#Index h1 {
     font-size: 2.5rem;
     margin-left: 20px;
     color: gray;
 }
 
-h1:hover {
+#Index h1:hover {
     color: black;
 }
 
-nav {
+#Index nav {
     display: flex;
     height: 100%;
     width: 15%;
@@ -28,23 +38,23 @@ nav {
     justify-content: space-around;
 }
 
-.nav-links {
+#Index .nav-links {
     font-size: 1.5rem;
     text-decoration: none;
     color: gray;
     width: 50px;
 }
 
-.current-link {
+#Index .current-link {
     color: black;
     font-weight: bold;
 }
 
-.nav-links:hover {
+#Index .nav-links:hover {
     color: rgb(51, 51, 51);
 }
 
-.selector {
+#Index .selector {
     display: flex;
     height: 100px;
     width: 50%;
@@ -53,7 +63,7 @@ nav {
     margin: 20px auto;
 }
 
-.selector button {
+#Index .selector button {
     background-color: white;
     border: 1px solid gray;
     color: gray;
@@ -64,17 +74,17 @@ nav {
     justify-content: center;
 }
 
-.selector button:hover {
+#Index .selector button:hover {
     border: 1.5px solid black;
     color: black;
 }
 
-.selector .selected {
+#Index .selector .selected {
     border: 1.5px solid black;
     color: black;
 }
 
-.projects {
+#Index .projects {
     width: 75%;
     margin: 0px auto;
     display: flex;
@@ -83,13 +93,13 @@ nav {
     flex-wrap: wrap;
 }
 
-.project {
+#Index .project {
     width: 28%;
     margin-right: 5%;
     margin-top: 30px;
 }
 
-.project a {
+#Index .project a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,13 +107,13 @@ nav {
     overflow: hidden;
 }
 
-.project a img {
+#Index .project a img {
     width: calc(100% - 2px);
     height: auto;
     border: 1px solid gray;
 }
 
-.project a h3 {
+#Index .project a h3 {
     height: 50px;
     width: 100%;
     text-align: center;

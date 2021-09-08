@@ -1,17 +1,15 @@
-import './App.css'
 import {
   BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect
+  Route
 } from "react-router-dom";
 import MainPage from "./pages/index"
+import ColorAnimation from "./pages/ColorAnimation"
 
 function App() {
   return (
     <Router>
-      <Route path="/" component={MainPage} />
+      <Route exact path="/" component={MainPage} />
+      <Route exact path="/colors" component={ColorAnimation} />
     </Router>
   );
 }
