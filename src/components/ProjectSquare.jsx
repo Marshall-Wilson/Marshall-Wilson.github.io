@@ -1,6 +1,9 @@
 import React from 'react'
 
-
+/* ProjectSquare
+ *  Individual project component used in ProjectSelector
+ *  Takes 1 prop containing a project object (see ../scripts/projects.js)
+ */
 const ProjectSquare = ({project}) => {
 
     return (

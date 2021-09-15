@@ -1,0 +1,81 @@
+#about .profile {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#about .headshotFrame {
+    width: 250px;
+    height: 300px;
+    border: 4px solid black;
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#about .headshot {
+    width: auto;
+    height: 75%;
+    border: 4px solid black;
+    margin-top: 15px;
+}
+
+#about .blurb {
+    font-size: 18px;
+    margin-left: 75px;
+    width: 50%;
+}
+
+#about .blurb span {
+    font-weight: bold;
+}
+
+#about .email {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#about .email a {
+    font-weight: normal;
+    text-decoration: underline;
+    color: black;
+}
+
+#about .mediaLinks {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#about .mediaLinks a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#about .mediaLinks a:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+@media only screen and (max-width: 800px) {
+    #about .profile {
+        justify-content: center;
+    }
+    #about .headshotFrame {
+        width: 415px;
+        height: 500px;
+        margin-left: 0px;
+    }
+    #about .blurb {
+        margin-left: 0px;
+    }
+}

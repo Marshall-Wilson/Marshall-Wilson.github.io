@@ -1,3 +1,8 @@
+/* useInterval.js
+ *  implements setInterval in a functional component react-friendly way
+ *  Used with permision from https://overreacted.io/
+ */
+
 import { useEffect, useRef } from 'react';
 
 function useInterval(callback, delay) {

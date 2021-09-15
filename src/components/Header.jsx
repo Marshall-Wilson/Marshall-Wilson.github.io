@@ -1,14 +1,27 @@
 import React from 'react'
+import "../styles/header.css"
 
-const Header = () => {
+/* Header 
+ *  Component with title and basic nav links
+ *  "selected" prop can be "work", "about", or "" and will highlight the 
+ *  appropriate link 
+ */
+const Header = ({selected}) => {
     return (
-        <header>
+        <header id="header">
             <h1 id="logo">
-                Marshall Wilson
+                <a href="/">
+                    Marshall Wilson
+                </a>
             </h1>
             <nav>
-                <a href="./index.html" className="nav-links current-link">work</a>
-                <a href="./index.html" className="nav-links">about</a>
+                {selected === "work" ? 
+                    <a href="/" className="nav-links current-link">work</a>
+                :   <a href="/" className="nav-links">work</a>}
+                {selected === "about" ? 
+                    <a href="/about" className="nav-links current-link">about</a>
+                :   <a href="/about" className="nav-links">about</a>}
+                
             </nav>
         </header>
     )

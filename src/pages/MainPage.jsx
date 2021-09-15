@@ -6,7 +6,7 @@ import "../styles/App.css"
 const MainPage = () => {
     return (
         <div id="Index">
-            <Header />
+            <Header selected="work"/>
             <ProjectSelector />
         </div>
     )

@@ -12,52 +12,10 @@ body {
     height: 100%;
 }
 
-#Index header {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-#Index h1 {
-    font-size: 2.5rem;
-    margin-left: 20px;
-    color: gray;
-}
-
-#Index h1:hover {
-    color: black;
-}
-
-#Index nav {
-    display: flex;
-    height: 100%;
-    width: 15%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#Index .nav-links {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: gray;
-    width: 50px;
-}
-
-#Index .current-link {
-    color: black;
-    font-weight: bold;
-}
-
-#Index .nav-links:hover {
-    color: rgb(51, 51, 51);
-}
-
 #Index .selector {
     display: flex;
     height: 100px;
-    width: 50%;
+    width: 65%;
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
@@ -85,18 +43,17 @@ body {
 }
 
 #Index .projects {
-    width: 75%;
+    width: 65%;
     margin: 0px auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 #Index .project {
-    width: 28%;
-    margin-right: 5%;
-    margin-top: 30px;
+    width: 320px;
+    margin: 30px 40px 0px 40px;
 }
 
 #Index .project a {

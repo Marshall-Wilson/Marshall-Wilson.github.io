@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Projects from "../scripts/Projects"
+import PROJECTS from "../scripts/projects"
 import ProjectSquare from "./ProjectSquare"
 
 let BUTTONS = [{name: "All", selected: true}, 
@@ -9,12 +9,18 @@ let BUTTONS = [{name: "All", selected: true},
                 {name: "C", selected: false}]
 
 
+/* ProjectSelector
+ *  Component which creates a gallery of projects from the PROJECTS list and 
+ *      and a line of buttons from the BUTTONS list. When pressed, each button
+ *      filters the projects based on their "types" values
+ *  Takes no props
+ */
 const ProjectSelector = () => {
-    const [projects, setProjects] = useState(Projects);
+    const [projects, setProjects] = useState(PROJECTS);
     const [buttons, setButtons] = useState(BUTTONS);
     
     const applyFilter = type => {
-        setProjects(Projects.filter(project => project.types.includes(type.toLowerCase())));
+        setProjects(PROJECTS.filter(project => project.types.includes(type.toLowerCase())));
         setButtons(BUTTONS.map((button) => {
             if (button.name === type) {
                 button.selected = true;

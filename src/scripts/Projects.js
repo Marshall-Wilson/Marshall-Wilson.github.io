@@ -1,11 +1,21 @@
+/* projects.js
+ *  exports a list of projects for the project selector on the home page
+ *  each project has:
+ *      name:   string, title of project in titlecase 
+ *      types:  list of strings, tags associated with the projects
+ *      url:    string, url of project page (route, website, or github link)
+ *      image:  imported image file for the thumbnail of the project
+ * 
+ * Note: organic farm name generator and rpn calculator project currently excluded
+ */
+
 import trex from "../images/trex.jpg"
 import um from "../images/um.png"
 import network from "../images/network.jpg"
 import colors from "../images/colors.png"
-import farm from "../images/farm.jpg"
+// import farm from "../images/farm.jpg"
 import cat from "../images/cat.jpg"
-import rpn from "../images/rpn.jpg"
-
+// import rpn from "../images/rpn.jpg"
 
 
 const projectConstructor = (name, types, url, image) => {
@@ -17,7 +27,7 @@ const projectConstructor = (name, types, url, image) => {
     }
 }
 
-const Projects = [
+const PROJECTS = [
     projectConstructor("Museum Employee Scheduler", ["all", "python"],
         "https://github.com/Marshall-Wilson/employee_scheduler", trex),
     projectConstructor("Universal Machine Emulator", ["all", "c"],
@@ -26,14 +36,14 @@ const Projects = [
         "https://github.com/Marshall-Wilson/collaboration-explorer", network),
     projectConstructor("Color Picker Animation", ["all", "javascript"],
         "/colors", colors),
-    projectConstructor("Organic Farm Name Generator", ["all", "javascript"],
-        "/generator", farm),
+    // projectConstructor("Organic Farm Name Generator", ["all", "javascript"],
+    //     "/generator", farm),
     projectConstructor("PNM Image Manipulation", ["all", "c"],
         "/pnm", cat),
-    projectConstructor("RPN Calculator", ["all", "c"],
-        "/rpn", rpn)
+    // projectConstructor("RPN Calculator", ["all", "c"],
+    //     "/rpn", rpn)
 ]
 
 
 
-export default Projects
+export default PROJECTS

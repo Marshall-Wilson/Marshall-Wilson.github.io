@@ -1,13 +1,23 @@
 import React, {useState} from 'react'
 import "../styles/colors.css"
 import useInterval from "../scripts/useInterval"
+import Header from "../components/Header"
 
-const CHANGEFREQUENCY = 1;
 const NUMCOLORS = 10;
+const CHANGEFREQUENCY = 1;
 const RGBMAX = 250; //rgbMax + any rgbInc value cannot exeed 255
 const RGBMIN = 50;
 const FRAMERATE = 75;
 
+/* ColorAnimation
+ *  Single page component, which generates a scrolling gradient of colors and 
+ *      identifies the rgb values of the topmost color in a seperate swatch.
+ *  Takes no props 
+ *  Constants above control the number of breakpoints in the gradient, 
+ *      how frequently breakpoints change color (1 being every frame), 
+ *      the maximum rgb value, minimum rgb value, and delay in ms between 
+ *      iterations respectively
+ */
 const ColorAnimation = () => {
 
     // Helper Functions
@@ -67,7 +77,7 @@ const ColorAnimation = () => {
 
     return (
         <div id="ColorAnimation" onClick={handleClick} style={gradient}>
-            <h1><a href="/">Home</a></h1>
+            <Header />
             <div id="colorInfo">
                 <div id="swatchColor" style={{background: `rgb(${colors[0].r}, ${colors[0].g}, ${colors[0].b}`}}></div>
                 <h1>Current Color</h1>

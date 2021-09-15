@@ -1,3 +1,9 @@
+/* colors.js
+ *  deprecated version of /src/pages/ColorAnimation.jsx
+ *  using pure js, generates a scrolling gradient of colors and 
+ *  displays their values to a page 
+ */
+
 const frame = () => {
     if (running) {
         for (let i = 0; i < stops.length - 1; i++) {
