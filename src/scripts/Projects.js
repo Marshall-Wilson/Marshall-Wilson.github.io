@@ -35,11 +35,11 @@ const PROJECTS = [
     projectConstructor("Musical Collaboration Explorer", ["all", "c++"],
         "https://github.com/Marshall-Wilson/collaboration-explorer", network),
     projectConstructor("Color Picker Animation", ["all", "javascript"],
-        "/colors", colors),
+        "/#/colors", colors),
     // projectConstructor("Organic Farm Name Generator", ["all", "javascript"],
     //     "/generator", farm),
     projectConstructor("PNM Image Manipulation", ["all", "c"],
-        "/pnm", cat),
+        "https://github.com/Marshall-Wilson/pnm-manipulation", cat),
     // projectConstructor("RPN Calculator", ["all", "c"],
     //     "/rpn", rpn)
 ]

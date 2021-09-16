@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.d5997f97.chunk.css",
-    "main.js": "/app/static/js/main.9dd3369e.chunk.js",
-    "main.js.map": "/app/static/js/main.9dd3369e.chunk.js.map",
-    "runtime-main.js": "/app/static/js/runtime-main.e5ae5669.js",
-    "runtime-main.js.map": "/app/static/js/runtime-main.e5ae5669.js.map",
-    "static/js/2.11e6e00c.chunk.js": "/app/static/js/2.11e6e00c.chunk.js",
-    "static/js/2.11e6e00c.chunk.js.map": "/app/static/js/2.11e6e00c.chunk.js.map",
-    "index.html": "/app/index.html",
-    "static/css/main.d5997f97.chunk.css.map": "/app/static/css/main.d5997f97.chunk.css.map",
-    "static/js/2.11e6e00c.chunk.js.LICENSE.txt": "/app/static/js/2.11e6e00c.chunk.js.LICENSE.txt",
-    "static/media/cat.e40e6155.jpg": "/app/static/media/cat.e40e6155.jpg",
-    "static/media/colors.5fccc065.png": "/app/static/media/colors.5fccc065.png",
-    "static/media/generator.css": "/app/static/media/farm2.6a1984d2.jpg",
-    "static/media/headshot.079f4828.jpeg": "/app/static/media/headshot.079f4828.jpeg",
-    "static/media/network.082415d4.jpg": "/app/static/media/network.082415d4.jpg",
-    "static/media/resume.7e6d59ab.pdf": "/app/static/media/resume.7e6d59ab.pdf",
-    "static/media/trex.c9512315.jpg": "/app/static/media/trex.c9512315.jpg",
-    "static/media/um.fb0c5e73.png": "/app/static/media/um.fb0c5e73.png"
+    "main.css": "/static/css/main.02eb411f.chunk.css",
+    "main.js": "/static/js/main.e991dd79.chunk.js",
+    "main.js.map": "/static/js/main.e991dd79.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d9931c9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d9931c9.js.map",
+    "static/js/2.2106d4cc.chunk.js": "/static/js/2.2106d4cc.chunk.js",
+    "static/js/2.2106d4cc.chunk.js.map": "/static/js/2.2106d4cc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.02eb411f.chunk.css.map": "/static/css/main.02eb411f.chunk.css.map",
+    "static/js/2.2106d4cc.chunk.js.LICENSE.txt": "/static/js/2.2106d4cc.chunk.js.LICENSE.txt",
+    "static/media/cat.e40e6155.jpg": "/static/media/cat.e40e6155.jpg",
+    "static/media/colors.5fccc065.png": "/static/media/colors.5fccc065.png",
+    "static/media/generator.css": "/static/media/farm2.6a1984d2.jpg",
+    "static/media/headshot.079f4828.jpeg": "/static/media/headshot.079f4828.jpeg",
+    "static/media/network.082415d4.jpg": "/static/media/network.082415d4.jpg",
+    "static/media/resume.7e6d59ab.pdf": "/static/media/resume.7e6d59ab.pdf",
+    "static/media/trex.c9512315.jpg": "/static/media/trex.c9512315.jpg",
+    "static/media/um.fb0c5e73.png": "/static/media/um.fb0c5e73.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5ae5669.js",
-    "static/js/2.11e6e00c.chunk.js",
-    "static/css/main.d5997f97.chunk.css",
-    "static/js/main.9dd3369e.chunk.js"
+    "static/js/runtime-main.9d9931c9.js",
+    "static/js/2.2106d4cc.chunk.js",
+    "static/css/main.02eb411f.chunk.css",
+    "static/js/main.e991dd79.chunk.js"
   ]
 }

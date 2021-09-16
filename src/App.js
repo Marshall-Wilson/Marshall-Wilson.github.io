@@ -1,5 +1,6 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
+  Switch,
   Route
 } from "react-router-dom";
 import MainPage from "./pages/MainPage"
@@ -9,11 +10,13 @@ import FarmNameGenerator from "./pages/FarmNameGenerator";
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/" component={MainPage} /> 
-      <Route exact path="/colors" component={ColorAnimation} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/generator" component={FarmNameGenerator} />
+    <Router basename="/">
+      <Switch>
+        <Route exact path="/" component={MainPage} /> 
+        <Route exact path="/colors" component={ColorAnimation} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/generator" component={FarmNameGenerator} />
+      </Switch>
     </Router>
   );
 }

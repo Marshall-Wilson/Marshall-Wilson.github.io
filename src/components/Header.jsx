@@ -10,17 +10,17 @@ const Header = ({selected}) => {
     return (
         <header id="header">
             <h1 id="logo">
-                <a href="/">
+                <a href="/#/">
                     Marshall Wilson
                 </a>
             </h1>
             <nav>
                 {selected === "work" ? 
-                    <a href="/" className="nav-links current-link">work</a>
-                :   <a href="/" className="nav-links">work</a>}
+                    <a href="/#/" className="nav-links current-link">work</a>
+                :   <a href="/#/" className="nav-links">work</a>}
                 {selected === "about" ? 
-                    <a href="/about" className="nav-links current-link">about</a>
-                :   <a href="/about" className="nav-links">about</a>}
+                    <a href="/#/about" className="nav-links current-link">about</a>
+                :   <a href="/#/about" className="nav-links">about</a>}
                 
             </nav>
         </header>
