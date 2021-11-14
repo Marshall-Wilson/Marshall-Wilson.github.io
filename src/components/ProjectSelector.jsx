@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import PROJECTS from "../scripts/projects"
+import PROJECTS from "../scripts/Projects"
 import ProjectSquare from "./ProjectSquare"
 
 let BUTTONS = [{name: "All", selected: true}, 
