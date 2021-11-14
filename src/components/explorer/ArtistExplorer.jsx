@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { generatePlaylist } from '../../scripts/spotifySearch'
+import { generatePlaylist, generateToken } from '../../scripts/spotifySearch'
 import Traverser from './Traverser';
 import Input from './Input';
 
 // Retrieves access token and playlist info from Spotify callback
-const hash = window.location.hash
+const query = window.location.search
     .substring(1)
     .split("&")
     .reduce(function(initial, item) {
@@ -14,11 +14,10 @@ const hash = window.location.hash
         }
         return initial;
     }, {});
-window.location.hash = "";
 
 // Main component for the spotify artist explorer 
 function ArtistExplorer() {
-    const [token, setToken] = useState(null); //Spotify access token
+    const [code, setCode] = useState(null); //Spotify access token request code
     const [startName, setStartName] = useState(''); //starting artist
     const [endName, setEndName] = useState(''); //ending artist
     const [searching, setSearching] = useState(false); //whether search is currently happening
@@ -26,20 +25,26 @@ function ArtistExplorer() {
 
     // On load check hash for access token
     useEffect(() => {
-        if (hash.access_token && hash.state) {
-            setToken(hash.access_token);
-            window.location.hash = '';
+        if (query.code && query.state) {
+            setCode(query.code);
         }
     }, [])
 
+
     // If access token and playlist info are available, generate playlist for user
     useEffect(() => {
-        if (token && hash.state) {
-            let songList = hash.state.split('-').filter(elmt => elmt !== "");
-            generatePlaylist(token, songList)
+        if (code && query.state) {
+            let songList = query.state.split('-').filter(elmt => elmt !== "");
+            console.log("getting token")
+            generateToken(code)
+            .then(res => {
+                console.log(res);
+                generatePlaylist(res.access_token, songList)
                 .then(res => setPlaylistID(res));
+            })
         }
-    }, [token])
+    }, [code])
+
 
     // Click handler for initial input
     const beginSearch = () => {
@@ -48,7 +53,7 @@ function ArtistExplorer() {
 
     return ( 
         <div className = "artist-explorer" >
-            {token ? // if user token is available, display post-playlist info
+            {code ? // if user token is available, display post-playlist info
                 <div className='playlist-added'>
                     <h1> Playlist Added </h1> 
                     <a className='playlist-button' href={`https://open.spotify.com/playlist/${playlistID}`} target='_blank' rel="noopener noreferrer">

@@ -168,3 +168,26 @@ export const generatePlaylist = async(token, songList) => {
     await api.addTracksToPlaylist(playlist.id, songList.map((songId) => "spotify:track:" + songId));
     return playlist.id;
 }
+
+export const generateToken = (authCode) => {
+    return new Promise((resolve, reject) => {
+        fetch('https://accounts.spotify.com/api/token', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Basic ' + Buffer.from('d4c2fd522b164d169533cc916f7c5d27:fcd4680273bc464ab3524d0ce93bf654').toString('base64'),
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                grant_type: "authorization_code",
+                code: authCode,
+                redirect_uri: "http://marshallwilson.info/"
+            })
+        }).then(res => {
+            res.json().then((data) =>
+                resolve(data)
+            )
+        }).catch((e) => {
+            reject(e);
+        })
+    })
+}

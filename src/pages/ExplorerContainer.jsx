@@ -12,7 +12,7 @@ const ExplorerContainer = () => {
         setPage(name);
     }
 
-    const GetPage = () => {
+    const GetPage = ({code, trackString}) => {
         if (page === 'main') {
             return <ArtistExplorer />
         } else if (page === 'about') {

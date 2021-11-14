@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/colors" component={ColorAnimation} />
         <Route exact path="/about" component={About} />
         <Route exact path="/generator" component={FarmNameGenerator} />
-        <Route path="/explorer" component={ExplorerContainer} />
+        <Route exact path="/explorer" component={ExplorerContainer} />
       </Switch>
     </Router>
   );
