@@ -28,18 +28,20 @@ const projectConstructor = (name, types, url, image) => {
 }
 
 const PROJECTS = [
+    projectConstructor("Spotify Artist Explorer", ["all", "javascript"],
+        "/#/explorer", network),
     projectConstructor("Museum Employee Scheduler", ["all", "python"],
         "https://github.com/Marshall-Wilson/employee_scheduler", trex),
     projectConstructor("Universal Machine Emulator", ["all", "c"],
         "https://github.com/Marshall-Wilson/UM-Emulator", um),
-    projectConstructor("Musical Collaboration Explorer", ["all", "c++"],
-        "https://github.com/Marshall-Wilson/collaboration-explorer", network),
     projectConstructor("Color Picker Animation", ["all", "javascript"],
         "/#/colors", colors),
     // projectConstructor("Organic Farm Name Generator", ["all", "javascript"],
     //     "/generator", farm),
     projectConstructor("PNM Image Manipulation", ["all", "c"],
         "https://github.com/Marshall-Wilson/pnm-manipulation", cat),
+    projectConstructor("Musical Collaboration Explorer", ["all", "c++"],
+        "https://github.com/Marshall-Wilson/collaboration-explorer", network),
     // projectConstructor("RPN Calculator", ["all", "c"],
     //     "/rpn", rpn)
 ]

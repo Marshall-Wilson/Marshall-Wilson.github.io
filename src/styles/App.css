@@ -76,3 +76,9 @@ body {
     text-align: center;
     color: gray;
 }
+
+@media only screen and (max-width: 600px) {
+    #Index .selector {
+        display: none;
+    }
+}

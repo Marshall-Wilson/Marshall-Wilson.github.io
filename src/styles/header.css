@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 130px;
     width: 100%;
     justify-content: space-between;
 }
@@ -25,16 +25,18 @@ header {
     display: flex;
     height: 100%;
     width: 20%;
-    margin-right: 20px;
+    margin-right: 40px;
     align-items: center;
     justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #header .nav-links {
     font-size: 1.5rem;
     text-decoration: none;
     color: gray;
-    width: 50px;
+    width: auto;
 }
 
 #header .current-link {
