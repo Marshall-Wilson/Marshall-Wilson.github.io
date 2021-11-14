@@ -3,11 +3,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import MainPage from "./pages/MainPage"
-import ColorAnimation from "./pages/ColorAnimation"
-import About from "./pages/About"
-import FarmNameGenerator from "./pages/FarmNameGenerator";
-import ExplorerContainer from "./pages/ExplorerContainer"
+import MainPage from "./pages/MainPage.jsx"
+import ColorAnimation from "./pages/ColorAnimation.jsx"
+import About from "./pages/About.jsx"
+import FarmNameGenerator from "./pages/FarmNameGenerator.jsx";
+import ExplorerContainer from "./pages/ExplorerContainer.jsx"
 
 function App() {
   return (

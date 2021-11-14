@@ -1,4 +1,4 @@
-import BfsArtist from './BfsArtist'
+import BfsArtist from './BfsArtist.js'
 import SpotifyWebApi from 'spotify-web-api-js'
 
 
