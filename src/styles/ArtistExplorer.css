@@ -35,6 +35,11 @@ body {
     background-image: linear-gradient(to bottom, RGB(27, 203, 87), RGB(27, 203, 87), white);
 }
 
+.explorer-container .nav a {
+    color: white;
+    text-decoration: none;
+}
+
 .explorer-container .nav h1 {
     padding-left: 20px;
 }
