@@ -34,12 +34,17 @@ export const searchRelated = async(start, end, api, setCurrent) => {
         curr = tbd.shift();
         setCurrent(curr);
         visited.push(curr);
-        let newRelateds = await getAllRelateds(curr, api);
-        newRelateds.forEach((related) => {
-            if (!isIn(related.id, tbd) && !isIn(related.id, visited)) {
-                tbd.push(related);
-            }
-        })
+        await getAllRelateds(curr, api)
+            .then(res => {
+                res.forEach((related) => {
+                    if (!isIn(related.id, tbd) && !isIn(related.id, visited)) {
+                        tbd.push(related);
+                    }
+                })
+            }).catch((err) => { // handle rate limit errors 
+                tbd.unshift(curr);
+                visited.pop();
+            });
     }
 
     const foundEnd = tbd.find((elmt) => elmt.id === end.id);
@@ -60,6 +65,7 @@ const getAllRelateds = (artist, api) => {
                     return new BfsArtist(newArtist, artist, null);
                 }));
             })
+            .catch((err) => reject(err));
     })
 }
 
