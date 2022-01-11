@@ -16,6 +16,7 @@ import colors from "../images/colors.png"
 // import farm from "../images/farm.jpg"
 import cat from "../images/cat.jpg"
 // import rpn from "../images/rpn.jpg"
+import dragdraft from "../images/dragdraft.png"
 
 
 const projectConstructor = (name, types, url, image) => {
@@ -28,6 +29,8 @@ const projectConstructor = (name, types, url, image) => {
 }
 
 const PROJECTS = [
+    projectConstructor("Full-Stack Fantasy Draft", ["all", "javascript"],
+        "/#/dragdraft", dragdraft),
     projectConstructor("Spotify Artist Explorer", ["all", "javascript"],
         "/#/explorer", network),
     projectConstructor("Museum Employee Scheduler", ["all", "python"],

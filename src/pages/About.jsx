@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "../components/Header"
 import HeadshotFrame from "../components/HeadshotFrame"
 import "../styles/about.css"
 import resume from "../images/resume.pdf"
@@ -15,7 +14,6 @@ const About = () => {
 
     return (
         <div id="about">
-            <Header selected="about"/>
             <div className="profile">
                 <HeadshotFrame />
                 <div className="blurb">

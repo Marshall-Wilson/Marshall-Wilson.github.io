@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import "../styles/colors.css"
 import useInterval from "../scripts/useInterval"
-import Header from "../components/Header"
-
+ 
 const NUMCOLORS = 10;
 const CHANGEFREQUENCY = 1;
 const RGBMAX = 250; //rgbMax + any rgbInc value cannot exeed 255
@@ -77,7 +76,6 @@ const ColorAnimation = () => {
 
     return (
         <div id="ColorAnimation" onClick={handleClick} style={gradient}>
-            <Header />
             <div id="colorInfo">
                 <div id="swatchColor" style={{background: `rgb(${colors[0].r}, ${colors[0].g}, ${colors[0].b}`}}></div>
                 <h1>Current Color</h1>

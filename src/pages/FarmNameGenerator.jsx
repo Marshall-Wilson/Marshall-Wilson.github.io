@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import "../styles/generator.css"
 import generateFarmName from '../scripts/generator'
-import Header from "../components/Header"
 
 /* FarmNameGenerator
  *  Full page component, which displays a new plausible organic farm name each
@@ -19,7 +18,6 @@ const FarmNameGenerator = () => {
 
     return (
         <div id="generator">
-            <Header />
             <h2>Organic Farm Name Generator</h2>
             <button type="button" onClick={clickHandler}>Generate New Farm Name</button>
             {farmName ? 
